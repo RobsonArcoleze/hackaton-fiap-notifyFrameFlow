@@ -1,18 +1,13 @@
-# FIAP Frameflow
+# FIAP Hackaton Frame
+-Repositorio para infraestrutura do frameflow
 
 ## 📄 Resumo do Projeto
-O FIAP Frameflow é um sistema projetado para processamento de vídeos, permitindo que os usuários enviem arquivos, processem cortes e façam o download das imagens extraídas em um arquivo .zip. O projeto evoluiu a partir de um MVP e agora busca garantir escalabilidade, segurança e qualidade de software, atendendo a uma demanda crescente de usuários e volume de vídeos processados.
+O FIAP Hackaton Frame é um sistema projetado para processamento de vídeos, permitindo que os usuários enviem arquivos, processem cortes e façam o download das imagens extraídas em um arquivo .zip. O projeto evoluiu a partir de um MVP e agora busca garantir escalabilidade, segurança e qualidade de software, atendendo a uma demanda crescente de usuários e volume de vídeos processados.
 
 ## 👨‍🔧👩‍🔧 Integrantes
-Carlos Jafet - RM 354076 - cjafet07@gmail.com
 
-Guilherme Macedo Moreira - RM 353750 - guilherme.macedomoreira@gmail.com
+Robson de Oliveira Arcoleze - RM 3569698 - robson.arcoleze29@gmail.com
 
-Isabella Bellinazzi da Silva - RM 354143 - isabellinazzi@hotmail.com
-
-Juliano Silva Nunes - RM 354144 - silva.juliano8130@gmail.com
-
-Thiago Augusto Nery - RM 355063 - doomerbr@gmail.com
 
 ## 🔨 Arquitetura Proposta
 A solução será baseada em uma arquitetura escalável e distribuída, garantindo eficiência e alta disponibilidade. Os principais componentes incluem:
@@ -28,28 +23,27 @@ A solução será baseada em uma arquitetura escalável e distribuída, garantin
 ### Repositórios no GitHub
 
 - **Infraestrutura Kubernetes com Terraform:**  
-  [infra-fiap-frameflow](https://github.com/GuiMM/infra-fiap-frameflow)
+  [infra-fiap-frameflow](https://github.com/RobsonArcoleze/hackaton-fiap-infra)
 
 - **Infraestrutura de Banco de Dados Gerenciáveis com Terraform:**  
-  [infra-bd-fiap-frameflow](https://github.com/GuiMM/infra-bd-fiap-frameflow)
+  [infra-bd-fiap-frameflow](https://github.com/RobsonArcoleze/hackaton-fiap-db-infra)
 
 - **Microserviço de Notificação por E-mail (Consumidor):**  
-  [authframeflow](https://github.com/julianoBeerg/fiap-authframeflow)
-  
+  [authframeflow](https://github.com/RobsonArcoleze/hackaton-fiap-auth)
+
 - **Microserviço de Upload de Vídeo (Produtor):**  
-  [java-spring-aws-sqs](https://github.com/cjafet/java-spring-aws-sqs)
+  [java-spring-aws-sqs](https://github.com/RobsonArcoleze/hackaton-aws-sqs)
 
 - **Microserviço de Processamento de Vídeo (Consumidor):**  
-  [fiap-frameflow](https://github.com/Tnery81/fiap-frameflow)
+  [fiap-frameflow](https://github.com/RobsonArcoleze/hackaton-fiap-frame)
 
 - **Microserviço de Notificação por E-mail (Consumidor):**  
-  [fiap-notifyframeflow](https://github.com/julianoBeerg/fiap-notifyframeflow)
+  [fiap-notifyframeflow](https://github.com/RobsonArcoleze/hackaton-fiap-notifyFrameFlow)
 
 ## 📐 Diagramas e Documentações
 
-- [**Diagrama da Arquitetura do Sistema**](https://drive.google.com/file/d/1tmwsMudqYLGj0Bk0klof8fA4hw1KPFEX/view?usp=sharing)
-- [**Documentação da Modelagem de Dados**](https://docs.google.com/document/d/1saqkl32ulXfilE4y4Ay43t4JogHs1P7lekVda9JkCkM/edit?usp=sharing)
-- [**Organização no Sonar Cloud**](https://sonarcloud.io/projects)
+- [**Diagrama da Arquitetura do Sistema**](https://drive.google.com/file/d/1tmwsMudqYLGj0Bk0klof8fA4hw1KPFEX/view)
+- [**Documentação da Modelagem de Dados**]https://docs.google.com/document/d/1TKvx9MnW6Q-lvNpo60jWedmaOMdGRnL5/edit)
 
 ## ✔️ Funcionalidades do Projeto
 
@@ -73,4 +67,3 @@ A solução será baseada em uma arquitetura escalável e distribuída, garantin
 
 ### 📩 Notificação de Status
 1. Notificação de status de erro/sucesso da requisição por e-mail.
-
